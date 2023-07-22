@@ -1,11 +1,90 @@
-.navbar-nav > li{
-    margin-left:10px;
-    margin-right:9px;
-    /* padding-left:10px;
-    padding-right:10px; */
-  }
 
-#contact{
-    color: whitesmoke;
-    margin-right: 40px;
+#contact
+{
+    color: white;
+    margin-right: 50px;
 }
+.container{
+    /* border: solid 2px gray; */
+    /* display: inline-block; */
+    display: flex;
+    padding: 10px;
+    margin-top: 10px ;
+}
+
+.info
+{
+   
+    margin-left: 30px;
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.responsive{
+    
+    margin-left: 30px;
+    /* align-items:end; */
+    max-width: 100%;
+    height: auto;
+}
+
+
+.responsive > h3{
+    
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.responsive > h4{
+    
+    margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+} 
+
+#name{
+    font-style: italic;
+}
+
+#work{
+    font-size: 20px;
+    /* margin-left: 30px; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    word-spacing: 3px;
+}
+
+
+.info > a
+{
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.social
+{
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.social >a
+{
+    margin-left: 20px;
+}
+
+.projects>h3
+{
+    font-family: 'Times New Roman';
+    font-size: 23px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+

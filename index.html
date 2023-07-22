@@ -1,78 +1,177 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ravi's Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="/imgs/favi.png">
-        <link rel="stylesheet" href="style.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-            crossorigin="anonymous">
-    </head>
-    <body>
 
-        <!-- ======= Header ======= -->
-        <header id="header">
-            <div class="container-fluid">
-                <!-- <h2><a href="/">Ravi Yadav</a></h2> -->
-                <nav class="navbar navbar-expand-lg bg-body-tertiary"
-                    data-bs-theme="dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand px-4" href="/"><h2>Ravi Prakash Yadav</h2>
-                        </a>
-                        <div class="collapse navbar-collapse"
-                            id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active"
-                                        aria-current="page" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">About Me</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#"
-                                        role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        Projects
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">NLP</a></li>
-                                        <li><a class="dropdown-item" href="#">Computer
-                                                Vision</a></li>
-                                        <li><a class="dropdown-item" href="#">Python</a></li>
-                                        <li><a class="dropdown-item" href="#">Web
-                                                Development</a></li>
-                                        <li><a class="dropdown-item" href="#">Spring
-                                                Boot</a></li>
-                                    </ul>
-                                </li>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ravi's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./static/imgs/favi.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
+<body>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact me</a>
-                                </li>
+    <!-- ======= Header ======= -->
+    <header class="header">
+        <div class="container-fluid mb-2">
+            <!-- <h2><a href="/">Ravi Yadav</a></h2> -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand px-4" href="/">
+                        <h2>Ravi Prakash Yadav</h2>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Projects
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">NLP</a></li>
+                                    <li><a class="dropdown-item" href="#">Computer
+                                            Vision</a></li>
+                                    <li><a class="dropdown-item" href="#">Python</a></li>
+                                    <li><a class="dropdown-item" href="#">Web
+                                            Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Spring
+                                            Boot</a></li>
+                                </ul>
+                            </li>
 
-                            </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact me</a>
+                            </li>
+
+                        </ul>
 
 
-                                <i id = "contact">Contact: +91-7905892439</i>
+                        <i id="contact">Contact: +91-7905892439</i>
 
-                        </div>
                     </div>
-                </nav>
-            </div>
-        </header>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-            crossorigin="anonymous"></script>
-    </body>
+    <div class="container">
+        <div class="info">
+            <h2>Hi, I'm <b id="name">Ravi Prakash Yadav,</b></h2>
+            <!-- <h3 id="work">I work as R&D Engineer at Ubisoft India</h3>
+             -->
+            <p id="work">
+                an <b>AI Engineer</b> with expertise in <b>AI/ML, NLP, and Computer Vision</b>
+                based<br> application development.With <b>3 years of experience</b> in the
+                field, I have a <br>proven track record of delivering high-quality projects
+                and driving impactful results.
+            </p>
+            <a class="btn btn-outline-primary" href="./static/files/Ravi_Yadav_Resume.pdf " download
+                role="button">Resume</a>
+            <a class="btn btn-outline-primary" href="#" role="button">Contact</a>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/raviyadav98/" target="_blank"><img src="./static/imgs/link.png"
+                        alt="linkedn"></a>
+                <a href="https://www.facebook.com/profile.php?id=100005343618697" target="_blank"><img
+                        src="./static/imgs/fb.png" alt="facebook"></a>
+                <a href="https://mail.google.com/mail/" target="_blank"><img src="./static/imgs/gm.png" alt="gmail"></a>
+                <a href="https://www.instagram.com/yadav_ravi.prakash/" target="_blank"><img
+                        src="./static/imgs/insta.png" alt="instagram"></a>
+                <a href="https://twitter.com/mamravi1998" target="_blank"><img src="./static/imgs/twi.png"
+                        alt="twitter"></a>
+                <a href="https://www.youtube.com/channel/UC1JU6-L5mFUE8cqQX5-Kr8w" target="_blank"><img
+                        src="./static/imgs/yt.png" alt="youtube"></a>
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="responsive">
+
+            <img src="./static/imgs/pic1.png" alt="ravi" width="300px">
+            <h3>Ravi Prakash Yadav</h3>
+            <h4>AI Engineer, Ubisoft India</h4>
+
+        </div>
+
+    </div>
+
+    <hr style="width: 90%; margin: auto;">
+
+    <!-- Recent Project Section -->
+
+    <div class="projects">
+        <h3>My Recent Projects:</h3>
+
+        <table class="table table-primary table-striped">
+            <thead>
+              <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Project Title</th>
+                <th scope="col">Category</th>
+                <th scope="col">Tech Stack</th>
+                <th scope="col">Project Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Person Portfolio Website</td>
+                <td>Web Developement</td>
+                <td>HTML, CSS, JavaScripts, Flask</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/"  type="_blank">Try This !</a>
+                    <a  href="https://github.com/" type="_blank"><img src="./static/imgs/git.png" alt="github"></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Weather Web Aap</td>
+                <td>Web Developement</td>
+                <td>HTML, CSS, JavaScripts, Flask</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/"  type="_blank">Try This !</a>
+                    <a href="https://github.com/" type="_blank"><img src="./static/imgs/git.png" alt="github"></a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Text Summarization Tool</td>
+                <td>NLP</td>
+                <td>Transformers, Pandas, Bert, Python, Flask</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="https://github.com/"  type="_blank">Try This !</a>
+                    <a href="https://github.com/" type="_blank"><img src="./static/imgs/git.png" alt="github"></a>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
