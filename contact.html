@@ -95,7 +95,7 @@
     <hr>
     <h4 id="send_que">Send Query</h4>
     <!-- Query Form -->
-    <form action="" class="query">
+    <form method='POST' action="" class="query-form" name="qform">
 
         <div class="query_details">
             <!-- Username -->
@@ -113,23 +113,46 @@
 
             <!-- Phone-->
             <label for="phone">Your Phone</label> <br>
-            <input type="text" placeholder="Enter Email" name="phone" required>
+            <input type="text" placeholder="Enter Phone" name="phone" required>
 
             <!-- Query -->
             <br><br>
-            
+
 
             <label for="phone">Your Query</label>
             <br>
-            <textarea name="que" id="que" cols="50" rows="4"></textarea><br>
+            <textarea name="query" id="query" cols="50" rows="4" required placeholder="Ask your query here"></textarea><br>
             <br>
 
             <button type="submit">Submit</button>
+            <div id="submit_msg"></div>
         </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbx-VG3TFMnhU9e4GT6gsbB_mJio2Px8AqV4uryOfRqdZQKUzPvN1lGvDGk6cBBgC0X6/exec"
+        const form = document.forms['qform']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    document.getElementById('submit_msg').innerText = "Sucessfully Sumitted !!"
+                    setTimeout(function () {
+                        document.getElementById("submit_msg").innerHTML = '';
+                        
+                    }, 3000);
+                    setTimeout(form.reset(), 3000);
+                })
+                .catch(error => console.error('Error!', error.message))
+            
+                
+        })
+        
+    </script>
 
 
 
