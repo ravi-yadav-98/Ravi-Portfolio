@@ -205,3 +205,16 @@ footer {
 
     
   }
+
+
+  .intro{
+    margin: 30px ;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(36, 34, 34);
+    padding: 20px;
+  }
+
+  .skills{
+    margin: 30px;
+  }
